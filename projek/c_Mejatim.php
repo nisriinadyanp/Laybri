@@ -9,11 +9,6 @@ class c_MeJatim {
         $this->model = new m_admin();
     }
 
-    function invoke() {
-        $data = $this->model->selectAll();
-        include "v_HalamanPublik.php";
-    }
-
     function login() {
         if ($_POST['username'] == 'admin' && $_POST['password'] == 'rahasia') {
             $_SESSION['username'] = 'admin';
