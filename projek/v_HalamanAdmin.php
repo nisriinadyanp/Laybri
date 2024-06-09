@@ -68,7 +68,17 @@
             </div>
 
             <!--Ini tambah-->
-            <a href= v_TambahLukisan.php>Tambah</a>
+            <div class="add-button text-right">
+                <button class="btn add-button" onclick="redirectToTambah()">
+                    <i class="bi-plus-circle-fill" style="font-size: 5rem; color:#052B4F;"></i>
+                </button>
+            </div>
+
+            <script>
+                function redirectToTambah() {
+                    window.location.href = 'v_TambahLukisan.php';
+                }
+            </script>
         </div>
 
     <!--Footer -->
