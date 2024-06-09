@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="hf.css">
         <link rel="stylesheet" href="v_halaman.css">
     </head>
+
     <body>
         <!--Header -->
          <header class="header">
@@ -36,14 +37,13 @@
                 <div class="deskripsi">
                     <p>Galeri digital hasil karya lukis seniman Jawa Timur</p> 
                 </div>
-            </div>
+        </div>
 
-            <div class="deskripsi">
-                    <p><b>Koleksi Kami</b></p>
-            </div>
+        <div class="deskripsi">
+            <p><b>Koleksi Kami</b></p>
+        </div>
 
             <div class="gallery">
-
                 <?php 
                     $mysqli = new mysqli('localhost', 'root', 'rahasia', 'mejatim');
                     $tampil = mysqli_query($mysqli, "SELECT * FROM lukisan");
@@ -64,7 +64,6 @@
                         echo "Belum ada lukisan tersedia";
                     }
                 ?>
-
             </div>
 
             <!--Ini tambah-->
