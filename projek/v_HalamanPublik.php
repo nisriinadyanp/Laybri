@@ -59,7 +59,7 @@
                             echo '<button onclick="location.href=\'v_tampil_lukisan.php?id=' . ($result["id"]) . '\'">';
                             echo "<img src='" . ($result["direktori_file"]) . "' alt='" . ($result["nama_file"]) . "' width='210'>";
                             echo "<h6>". $result['judul_lukisan'] . "</h6>";
-                            echo "<p class='text-right'>". $result['pelukis'] . "</p>";
+                            echo "<p class='text-right'>Oleh ". $result['pelukis'] . "</p>";
                             echo "</button>";
                             echo '</div>';
                         }
