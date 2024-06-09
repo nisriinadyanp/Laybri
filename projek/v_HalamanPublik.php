@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="hf.css">
         <link rel="stylesheet" href="v_halaman.css">
     </head>
+
     <body>
         <!--Header -->
          <header class="header">
@@ -31,7 +32,6 @@
         </script>
 
         <!--Konten -->
-
         <div class="konten">
 
             <div class="begin">
@@ -49,7 +49,6 @@
             </div>
 
             <div class="gallery">
-
                 <?php 
                     $mysqli = new mysqli('localhost', 'root', 'rahasia', 'mejatim');
                     $tampil = mysqli_query($mysqli, "SELECT * FROM lukisan");
@@ -68,11 +67,8 @@
                         echo "Belum ada lukisan tersedia";
                     }
                 ?>
-
             </div>
-
         </div>
-    </div>
 
     <!--Footer -->
         <footer class="footer">
