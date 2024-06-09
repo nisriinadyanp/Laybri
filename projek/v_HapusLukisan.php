@@ -7,6 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="hf.css">
+    <link rel="stylesheet" href="v_hapus.css">
 </head>
 <body>
 
@@ -37,14 +38,18 @@
     ?>
 
     <div class="konten text-center">
+        <h1>Cek Lukisan Anda</h1>
+        <p>Lukisan yang dihapus tidak dapat dikembalikan, pastikan lukisan benar</p><br>
+        <div class="infoLukisan">
         <h2><?php echo $row['judul_lukisan']; ?></h2>
-        <p><?php echo $row['pelukis']; ?></p>
-        <?php echo "<img src='" . ($row["direktori_file"]) . "' alt='" . ($row["nama_file"]) . "' width='500'>";?> <br>
-
+        <p>Pelukis: <?php echo $row['pelukis']; ?></p>
         <form action="" method="post" name="hLukisan">
-        <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+        <?php echo "<img src='" . ($row["direktori_file"]) . "' alt='" . ($row["nama_file"]) . "' width='500'>";?> <br>
+        <input type="hidden" name="id" value="<?php echo $row['id']; ?>"><br>
             <input class="tombol" type="submit" name="hLukisan" value="Hapus">
         </form>
+        </div>
+        
     </div>
 
     
